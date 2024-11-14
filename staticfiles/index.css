@@ -1,0 +1,188 @@
+#welcome {
+  background: linear-gradient(to right top, #c44262, #d5063a);
+  padding: 6rem 12%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center; 
+}
+
+#welcome header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+#welcome img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: top;
+  border: 5px solid white;
+  border-radius: 12px;
+  background-color: #ffe1bf;
+  transform: rotateZ(-5deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem; 
+}
+
+#welcome h2 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  color: #e4e4e4;
+}
+
+#welcome p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center; 
+  margin-top: 1rem; 
+}
+
+
+#latest-posts {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 100%; 
+  width: 60rem;
+  margin: -6rem auto 2rem auto;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box; 
+  overflow-x: hidden; 
+}
+
+#latest-posts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap; 
+  width: 100%; 
+}
+
+#latest-posts li {
+  flex: 1;
+  min-width: 150px; 
+}
+
+#about {
+  text-align: center;
+  padding: 3rem;
+  background-color: #d5063a;
+  margin-top: 5rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+#about p {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+/* Tablet view (max-width: 768px) */
+@media (max-width: 768px) {
+#welcome {
+  padding: 4rem 8%;
+}
+
+#welcome header {
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+#welcome img {
+  width: 17rem;
+  height: 17rem;
+}
+
+#welcome h2 {
+  font-size: 3rem;
+  margin: 1rem 0 0 0;
+  width: auto;
+  text-align: center;
+}
+
+#welcome p {
+  font-size: 1.3rem;
+}
+
+#latest-posts {
+  width: 90%;
+  margin: -4rem auto 2rem auto;
+}
+
+#latest-posts ul {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#about {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+}
+
+#about p {
+  font-size: 1.3rem;
+}
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+#welcome {
+  padding: 3rem 5%;
+}
+
+#welcome header {
+  margin: 1.5rem auto;
+}
+
+#welcome img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#welcome h2 {
+  font-size: 2.5rem;
+}
+
+#welcome p {
+  font-size: 1.2rem;
+}
+
+#latest-posts {
+  width: 95%;
+  padding: 1.5rem;
+  margin: -3rem auto 1rem auto;
+}
+
+#latest-posts ul {
+  flex-direction: column;
+}
+
+#about {
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+#about h2 {
+  font-size: 2rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+}
+
+

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+My Blog {% endblock  %}
+{% block content %}
+
+<section id="welcome">
+    <header>
+        <img src="{% static "images/Aisha.png" %}" alt="Mary - The author of this blog">
+        <h2>AISHA'S BLOG</h2>
+        <p>
+            I'm Aisha Abubakar, a passionate blogger covering Islam and global topics. I'm also a professional chef, creating delicious dishes inspired by diverse cultures. As a public speaker, I love sharing my experiences and insights on food, faith, and empowerment, connecting with others through both my words and my cooking.</p>
+    </header>
+</section>
+<section id="latest-posts">
+    <h2>My Latest Thoughts</h2>
+
+    <ul>
+        {% for post in posts %}
+      {% include "includes/post.html" %}
+      {% endfor %}
+    </ul>
+
+</section>
+<section id="about" class="latest-posts">
+    <h2>What i do</h2>
+    <p>I am a passionate blogger dedicated to exploring and sharing insights on topics that matter to modern Muslim women. From modest fashion and Islamic lifestyle tips to personal reflections on faith, wellness, and career growth, my blog is a space where I blend faith with the world around us. I enjoy discussing halal beauty routines, travel advice tailored for Muslim women, and how to maintain a balanced, purposeful life guided by Islamic values. </p>
+    <p>My aim is to inspire and empower women by offering thoughtful content that respects our beliefs while embracing new experiences. Join me on this journey to live a faith-centered, fulfilling, and vibrant life.</p>
+
+</section>
+{% endblock  %}

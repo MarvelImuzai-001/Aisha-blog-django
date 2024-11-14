@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}All My Posts{% endblock  %}
+
+{% block content %}
+<section id="all-posts">
+<h2>My collected posts</h2>
+<ul> 
+    {% for post in posts %}
+    {% include "includes/post.html" %}
+    {% endfor %}
+    
+</ul>
+</section>
+{% endblock  %}
