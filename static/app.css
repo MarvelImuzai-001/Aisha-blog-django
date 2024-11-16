@@ -29,13 +29,13 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #333;
 }
 
 #main-navigation a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-
 }
 
 #main-navigation a:hover,
@@ -50,12 +50,12 @@ h3 {
 
 #main-navigation nav {
   display: flex;
-  justify-content: space-between; 
-  gap: 1rem; 
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 #main-navigation nav a {
-  text-decoration: none; 
+  text-decoration: none;
   color: white;
   font-weight: bold;
 }
@@ -74,12 +74,13 @@ h3 {
   #main-navigation a {
     font-size: 1.3rem;
   }
+
   #main-navigation nav {
-    gap: 0.8rem; 
+    gap: 0.8rem;
   }
 
   #main-navigation nav a {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
@@ -88,25 +89,42 @@ h3 {
   #main-navigation {
     padding: 0 3%;
     height: 3.5rem;
-    flex-direction: column;
+    flex-direction: row; 
   }
 
   #main-navigation h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
   }
 
-  #main-navigation a {
-    font-size: 0.9rem;
-  }
   #main-navigation nav {
-    flex-direction: column; 
-    align-items: center; 
-    gap: 1rem;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 0.5rem;
   }
 
   #main-navigation nav a {
-    font-size: 0.9rem; 
-    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+}
+
+/* Very small screens (max-width: 320px) */
+@media (max-width: 320px) {
+  #main-navigation {
+    height: 3rem;
+    padding: 0 2%;
+  }
+
+  #main-navigation h1 {
+    font-size: 1rem;
+  }
+
+  #main-navigation nav {
+    gap: 0.3rem;
+  }
+
+  #main-navigation nav a {
+    font-size: 0.8rem;
+    padding: 0.2rem;
   }
 }
